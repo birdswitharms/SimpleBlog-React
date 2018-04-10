@@ -7,6 +7,11 @@ import registerServiceWorker from './registerServiceWorker';
 var post = {
   title: 'Dinosaurs are awesome',
   author: 'Mr. Stegosaurus',
+  allAuthors: [
+    'Stealthy Stegosaurus',
+    'Tiny T-Rex',
+    'Ivory Iguanodon',
+  ],
   body: 'Check out this awesome post!',
   comments: [
     'First!',
@@ -20,5 +25,6 @@ ReactDOM.render(<App
   author={post.author}
   body={post.body}
   comments={post.comments}
+  allAuthors={post.allAuthors}
   />, document.getElementById('root'));
 registerServiceWorker();
